@@ -42160,12 +42160,6 @@ If '${name}' is a directive input, make sure the directive is imported by the cu
     update(event) {
       return this.http.patch(`${this.eventsUrl}/${event.id}`, event);
     }
-    create(event) {
-      return this.http.post(this.eventsUrl, event);
-    }
-    remove(id) {
-      return this.http.delete(`${this.eventsUrl}/${id}`);
-    }
   };
   EventService = __decorateClass([
     Injectable({
